@@ -1,7 +1,7 @@
 import os
 import pymysql
 # get username 
-username=os.getenv("root")
+username=os.getenv("root") #this can be anything in original it was "C9_USER"
 
 #connect to the database
 connection = pymysql.connect(host='localhost',

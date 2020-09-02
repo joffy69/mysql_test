@@ -1,0 +1,32 @@
+For those who are studying the data-centric-dev module and using GitPod :slightly_smiling_face: After having those questions myself and seeing so many posts lately about it;
+Also to have only one thread where useful information is available;
+Here are my tips to run Flask or MySQL or to link up Heroku:
+First, make sure to use Code Institute Full template prepared for us:
+https://github.com/Code-Institute-Org/gitpod-full-template
+Use this template
+Create your own repo
+Open GitPod from GitHub to open workspace for the first time and then only open GitPod directly and workspace
+For Flask:
+To install via CLI: pip3 install Flask
+To import inside the app.py: from flask import Flask
+To view app.py in the browser: python3 app.py (even if your workspace has already python3)
+You also might need to set your environment variables inside the file to run it to browser:
+os.getenv(“IP”, “0.0.0.0”) or os.environ.get(“IP”, “0.0.0.0”)
+os.getenv(“PORT”, “5000”) or os.environ.get(“PORT”, “5000”)
+For Heroku:
+To show all heroku commands in CLI: heroku
+To login: 1-Type heroku login, 2-Press any key to open up the browser to login, 3-Click on link provided in CLI, 4-Click login on new page opened, 5-Go back to IDE and heroku is logged in
+For MySQL:
+To use mySQL from CLI: mysql
+At mysql prompt: start using other commands like “show databases;”
+To import external database in MySQL via CLI: mysql < Chinook_MySql_AutoIncrementPKs.sql
+This is it for now but I will update it whenever I find a process different than in the course videos, until they update them of course :wave::skin-tone-3: :wave::skin-tone-3:
+Show less
+
+-******************************-
+
+dont forget to remove any downloaded db files, due to size and add to .gitignore
+
+when using libraries its a good idea to keep a record of which ones youve used
+and which versions   pip3 freeze > requirements.txt
+
