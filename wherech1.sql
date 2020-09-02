@@ -1,0 +1,1 @@
+select FirstName, LastName, Title from Employee Where Employee.Title="IT Staff";
